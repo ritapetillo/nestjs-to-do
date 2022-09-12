@@ -16,7 +16,6 @@ export class TasksController {
     @Body('title') title: string,
     @Body('description') description: string,
   ) {
-    console.log(title);
     this.createTask(title, description);
   }
 }
